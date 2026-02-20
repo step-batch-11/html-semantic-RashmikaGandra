@@ -43,7 +43,7 @@ li > a {
 main {
   width: 70%;
   margin: 15px auto;
-  box-shadow: 0px 0px 5px 0px gray;
+  box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.626);
   padding: 1em;
 }
 
@@ -114,7 +114,7 @@ address > p{
   padding-left: 0.8em;
 }
 
-main > footer{
+body > footer{
   border-top: 2px solid transparent;
   text-align: center;
 }
