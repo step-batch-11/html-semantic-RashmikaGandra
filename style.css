@@ -1,12 +1,23 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
 body{
   font-family: sans-serif;
-  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  overflow: scroll;
 }
 
 header > hgroup {
   background-color: rgba(32, 178, 171, 0.592);
   padding: 0.2em;
   font-weight: 200;
+  text-align: center;
+  line-height: 3em;
   color: #333;
 }
 
@@ -23,4 +34,24 @@ nav > a {
   text-decoration: none;
   color: #222;
   font-size: 22px;
+}
+
+main{
+  width: 90%;
+  margin: 15px auto;
+  box-shadow: 0px 0px 5px 0px gray;
+  padding: 1em;
+}
+
+article{
+  padding: 0.8em;
+  line-height: 1.9em;
+}
+
+article > header{
+  font-weight: 300;
+}
+
+article > section > mark{
+  background-color: rgba(32, 178, 171, 0.342);
 }
