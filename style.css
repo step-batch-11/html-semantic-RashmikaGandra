@@ -18,14 +18,14 @@ header > hgroup {
   color: #222;
 }
 
-header > hgroup > p{
+header > hgroup > p {
   font-size: 20px;
-  font-weight: 350; 
+  font-weight: 350;
 }
 
 nav > ol {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   justify-content: flex-end;
   gap: 50px;
   background-color: rgba(211, 211, 211, 0.494);
@@ -34,9 +34,12 @@ nav > ol {
   list-style: none;
 }
 
-li > a {
+a {
   text-decoration: none;
   color: black;
+}
+
+li > a {
   font-size: 20px;
 }
 
@@ -45,13 +48,17 @@ main {
   margin: 15px auto;
   box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.626);
   padding: 1em;
+  display: flex;
 }
 
 article {
   padding: 0.8em;
-  line-height: 2.5em;
   margin-left: 10px;
   margin-bottom: 15px;
+}
+
+article p {
+  line-height: 1.4em;
 }
 
 article > header {
@@ -59,50 +66,69 @@ article > header {
   text-align: center;
 }
 
-article > section > p {
-  font-size: 18px;
-  font-weight: 200;
+article > header > h4, time {
+  line-height: 1.5em;
 }
 
-section:has(mark, done) {
-  display: flex;
-  flex-direction: column;
+article section {
+  margin-bottom: 2em;
+}
+
+article > section > p {
+  margin-top: 0.7em;
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 1.9em;
 }
 
 mark {
-  width: 33%;
-  background-color: rgba(0, 128, 0, 0.674);
+  width: 50%;
+  background-color: rgba(1, 85, 1, 0.674);
   color: rgb(249, 249, 249);
+  text-align: center;
 }
 
 figure {
-  border: 2px solid rgba(0, 0, 0, 0.631);
-  width: 56.7%;
+  width: 49%;
+  height: 20%;
   text-align: center;
-  font-size: 18px;
-  margin: 3px;
+  margin-top: 0.8em;
+}
+
+figure > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+figure, figcaption {
+  border: 1px solid lightgray;
 }
 
 figcaption {
-  font-size: 15px;
-  background-color: whitesmoke;
+  font-size: 13px;
+  padding: 0.8em;
 }
 
 details {
-  width: 25%;
+  width: 40%;
   padding: 0.2em;
-  margin-top: 10px;
+  margin-top: 60px;
   border: 2px solid #666;
+  line-height: 1.8em;
 }
 
-aside{
-  margin: 12px 0px;
-  padding-left: 0.5em;
-  width: 60%;
-  background-color: rgba(142, 241, 142, 0.555);
+aside {
+  margin: auto 10px;
+  padding-left: 1em;
+  width: 45%;
+  height: 100%;
+  box-shadow: inset 5px 0px 13px -2px rgba(5, 171, 5, 0.979);
+  float: right;
+  line-height: 2.4em;
 }
 
-footer{
+footer {
   line-height: 2em;
 }
 
@@ -110,11 +136,11 @@ footer > section {
   margin: 12px 0px;
 }
 
-address > p{
+address > p {
   padding-left: 0.8em;
 }
 
-body > footer{
+body > footer {
   border-top: 2px solid transparent;
   text-align: center;
 }
