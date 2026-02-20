@@ -43,6 +43,8 @@ main{
 article{
   padding: 0.8em;
   line-height: 2.5em;
+  margin-left: 10px;
+  margin-bottom: 15px;
 }
 
 article > header{
@@ -66,7 +68,7 @@ section:has(mark, done){
 }
 
 section > mark{
-  width: 28%;
+  width: 30%;
   text-align: center;
 }
 
@@ -78,8 +80,25 @@ section > aside{
 
 figure{
   border: 2px solid rgba(0, 0, 0, 0.631);
-  width: 48.9%;
+  width: 49.3%;
   text-align:center;
   font-size: 18px;
   margin: 3px;
+}
+
+figcaption {
+  background-color: whitesmoke;
+}
+
+details{
+  width: 25%;
+  margin-top: 10px;
+}
+
+summary{
+  border: 1px solid lightgray;
+}
+
+details[open] summary{
+  border: 1px solid lightgray;
 }
