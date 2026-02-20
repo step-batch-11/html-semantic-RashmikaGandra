@@ -44,14 +44,14 @@ li > a {
 }
 
 main {
-  width: 70%;
+  width: 80%;
   margin: 15px auto;
-  box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.626);
   padding: 1em;
   display: flex;
 }
 
 article {
+  box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.626);
   padding: 0.8em;
   margin-left: 10px;
   margin-bottom: 15px;
@@ -119,13 +119,14 @@ details {
 }
 
 aside {
-  margin: auto 10px;
+  /* margin: auto 10px; */
   padding-left: 1em;
   width: 45%;
   height: 100%;
   box-shadow: inset 5px 0px 13px -2px rgba(5, 171, 5, 0.979);
   float: right;
   line-height: 2.4em;
+  margin-left: 0.8em;
 }
 
 footer {
