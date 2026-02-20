@@ -1,104 +1,120 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   border: 0px;
 }
 
-body{
+body {
   font-family: sans-serif;
   overflow: scroll;
 }
 
 header > hgroup {
-  background-color: rgba(0, 128, 0, 0.91);
+  background-color: rgba(168, 248, 168, 0.91);
   padding: 0.2em;
-  font-weight:lighter;
+  font-weight: 100;
   text-align: center;
   line-height: 3em;
-  color:rgba(255, 245, 238, 0.889) ;
+  color: #222;
 }
 
-nav {
+header > hgroup > p{
+  font-size: 20px;
+  font-weight: 350; 
+}
+
+nav > ol {
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   justify-content: flex-end;
   gap: 50px;
-  background-color: lightgray;
+  background-color: rgba(211, 211, 211, 0.494);
   padding: 0.5em;
+  padding-right: 3em;
+  list-style: none;
 }
 
-nav > a {
+li > a {
   text-decoration: none;
-  color: #222;
-  font-size: 22px;
+  color: black;
+  font-size: 20px;
 }
 
-main{
-  width: 80%;
+main {
+  width: 70%;
   margin: 15px auto;
   box-shadow: 0px 0px 5px 0px gray;
   padding: 1em;
 }
 
-article{
+article {
   padding: 0.8em;
   line-height: 2.5em;
   margin-left: 10px;
   margin-bottom: 15px;
 }
 
-article > header{
+article > header {
   font-weight: 400;
   text-align: center;
 }
 
-article > section > p{
+article > section > p {
   font-size: 18px;
   font-weight: 200;
 }
 
-article > section > mark{
-  background-color: rgba(0, 128, 0, 0.787);
-  color: rgb(249, 249, 249);
-}
-
-section:has(mark, done){
+section:has(mark, done) {
   display: flex;
   flex-direction: column;
 }
 
-section > mark{
-  width: 30%;
-  text-align: center;
+mark {
+  width: 33%;
+  background-color: rgba(0, 128, 0, 0.674);
+  color: rgb(249, 249, 249);
 }
 
-section > aside{
-  width: 30%;
-  margin-left: 60em;
-  padding-left: 0.3em;
-}
-
-figure{
+figure {
   border: 2px solid rgba(0, 0, 0, 0.631);
-  width: 49.3%;
-  text-align:center;
+  width: 56.7%;
+  text-align: center;
   font-size: 18px;
   margin: 3px;
 }
 
 figcaption {
+  font-size: 15px;
   background-color: whitesmoke;
 }
 
-details{
+details {
   width: 25%;
+  padding: 0.2em;
   margin-top: 10px;
+  border: 2px solid #666;
 }
 
-summary{
-  border: 1px solid lightgray;
+aside{
+  margin: 12px 0px;
+  padding-left: 0.5em;
+  width: 60%;
+  background-color: rgba(142, 241, 142, 0.555);
 }
 
-details[open] summary{
-  border: 1px solid lightgray;
+footer{
+  line-height: 2em;
+}
+
+footer > section {
+  margin: 12px 0px;
+}
+
+address > p{
+  padding-left: 0.8em;
+}
+
+main > footer{
+  border-top: 2px solid transparent;
+  text-align: center;
 }
