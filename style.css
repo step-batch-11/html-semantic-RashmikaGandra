@@ -46,11 +46,27 @@ article{
 }
 
 article > header{
-  font-weight: 300;
+  font-weight: 400;
+  text-align: center;
+}
+
+article > section > p{
+  font-size: 18px;
+  font-weight: 200;
 }
 
 article > section > mark{
   background-color: rgba(32, 178, 171, 0.342);
+}
+
+section:has(mark, done){
+  display: flex;
+  flex-direction: column;
+}
+
+section > mark{
+  width: 28%;
+  text-align: center;
 }
 
 section > aside{
